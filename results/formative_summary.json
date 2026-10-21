@@ -1,0 +1,72 @@
+[
+ {
+  "id": "951242",
+  "date": "2026-09-29",
+  "version": "constant 0.5",
+  "pairs": 8,
+  "score": 0.25,
+  "budget0_brier": 0.25,
+  "score_minus_floor": 0.077508,
+  "se": 0.021765
+ },
+ {
+  "id": "954621",
+  "date": "2026-10-01",
+  "version": "Baseline",
+  "pairs": 9,
+  "score": 0.232172,
+  "budget0_brier": 0.298411,
+  "score_minus_floor": 0.048455,
+  "se": 0.01262
+ },
+ {
+  "id": "958131",
+  "date": "2026-10-03",
+  "version": "V1",
+  "pairs": 9,
+  "score": 0.202502,
+  "budget0_brier": 0.283004,
+  "score_minus_floor": 0.036414,
+  "se": 0.011321
+ },
+ {
+  "id": "963204",
+  "date": "2026-10-06",
+  "version": "V2",
+  "pairs": 8,
+  "score": 0.187682,
+  "budget0_brier": 0.302627,
+  "score_minus_floor": 0.044889,
+  "se": 0.010888
+ },
+ {
+  "id": "963789",
+  "date": "2026-10-06",
+  "version": "V3",
+  "pairs": 9,
+  "score": 0.155875,
+  "budget0_brier": 0.25,
+  "score_minus_floor": 0.034447,
+  "se": 0.007863
+ },
+ {
+  "id": "968769",
+  "date": "2026-10-08",
+  "version": "V4",
+  "pairs": 8,
+  "score": 0.170402,
+  "budget0_brier": 0.25,
+  "score_minus_floor": 0.030753,
+  "se": 0.011483
+ },
+ {
+  "id": "1005477",
+  "date": "2026-10-20",
+  "version": "V5",
+  "pairs": 8,
+  "score": 0.140778,
+  "budget0_brier": 0.179972,
+  "score_minus_floor": 0.009198,
+  "se": 0.006633
+ }
+]

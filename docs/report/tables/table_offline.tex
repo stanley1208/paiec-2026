@@ -1,0 +1,20 @@
+\begin{tabular}{lrrr}
+\toprule
+Predictor & Pair results & Brier ALC & $\Delta$ to row above (SE) \\
+\midrule
+\multicolumn{4}{l}{\emph{Default setting, $K = 0$}} \\
+\quad Baseline & 576 & 0.2161 & -- \\
+\quad V1 ($\lambda = 0.5$) & 576 & 0.2158 & $-0.0003$ (0.0011) \\
+\quad V3 ($\lambda = 0$) & 576 & 0.2188 & $+0.00300$ (0.00047) \\
+\addlinespace
+\multicolumn{4}{l}{\emph{Hidden-sized setting, $K = 1$}} \\
+\quad V1 ($\lambda = 0.5$) & 471 & 0.1959 & -- \\
+\quad V2 ($\lambda = 0.5$, pooling) & 471 & 0.1948 & $-0.00116$ (0.00015) \\
+\quad V3 ($\lambda = 0$, pooling) & 471 & 0.1993 & $+0.00459$ (0.00055) \\
+\addlinespace
+\multicolumn{4}{l}{\emph{Rated setting, $K = 0$}} \\
+\quad V3 & 594 & 0.2074 & -- \\
+\quad V4 (ratings, $t = 0.5$, gate) & 594 & 0.1930 & $-0.0144$ (0.0011) \\
+\quad V5 (V4 + subject guesses, $t_g = 0.75$) & 594 & 0.1795 & $-0.0135$ (0.0013) \\
+\bottomrule
+\end{tabular}

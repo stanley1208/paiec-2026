@@ -1,0 +1,44 @@
+{
+ "table": {
+  "real": {
+   "alc_pair_mean": 0.18863481985146752,
+   "vs_version3": {
+    "alc_diff": -0.018781478609217958,
+    "alc_diff_se": 0.002099720455463651
+   },
+   "by_benchmark": {
+    "matharena": -0.028284785285789944,
+    "multi_swebench": -0.004684197552297847,
+    "real_webagents": -0.008602143115500284,
+    "researchcodebench": -0.04119546169974037
+   }
+  },
+  "shuffled (shuffle)": {
+   "alc_pair_mean": 0.23443242146732907,
+   "vs_version3": {
+    "alc_diff": 0.027016123006643578,
+    "alc_diff_se": 0.0016935633928653318
+   },
+   "by_benchmark": {
+    "matharena": 0.017700468819700974,
+    "multi_swebench": 0.04704955350828872,
+    "real_webagents": 0.015508004995561367,
+    "researchcodebench": 0.013191515374086799
+   }
+  },
+  "shuffled (useless)": {
+   "alc_pair_mean": 0.23100776751008034,
+   "vs_version3": {
+    "alc_diff": 0.023591469049394884,
+    "alc_diff_se": 0.0018305742358773482
+   },
+   "by_benchmark": {
+    "matharena": 0.014048799908987789,
+    "multi_swebench": 0.04811060626890146,
+    "real_webagents": 0.008804229581222988,
+    "researchcodebench": 0.0034987449120562238
+   }
+  }
+ },
+ "elapsed_seconds": 214.7
+}

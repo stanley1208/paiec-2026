@@ -1,0 +1,128 @@
+{
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "headline": {
+  "alc_pair_mean": 0.19936780696291626,
+  "alc_pair_mean_seed_std": 0.0016050191580122028,
+  "alc_benchmark_mean": 0.21703158317361781,
+  "alc_benchmark_mean_seed_std": 0.0011505170237364622,
+  "ece_alc_pair_mean": 0.1491678596159327,
+  "ece_alc_pair_mean_seed_std": 0.003511681172408772
+ },
+ "per_seed": {
+  "0": {
+   "n_pairs": 155,
+   "alc_pair_mean": 0.2015968789886972,
+   "alc_benchmark_mean": 0.21672397110967387,
+   "ece_alc_pair_mean": 0.1537804166445172,
+   "brier_by_budget": {
+    "0": 0.25,
+    "1": 0.22525722676759513,
+    "3": 0.2044981643256065,
+    "7": 0.1889783706436187,
+    "15": 0.17913880070111518,
+    "31": 0.17022366501110076
+   },
+   "folds": {
+    "matharena": {
+     "n_pairs": 26,
+     "alc_mean": 0.21314660772987207
+    },
+    "multi_swebench": {
+     "n_pairs": 67,
+     "alc_mean": 0.1773116955524552
+    },
+    "real_webagents": {
+     "n_pairs": 30,
+     "alc_mean": 0.20745718697941057
+    },
+    "researchcodebench": {
+     "n_pairs": 31,
+     "alc_mean": 0.23721336218626474
+    },
+    "swe_rebench": {
+     "n_pairs": 1,
+     "alc_mean": 0.24849100310036687
+    }
+   }
+  },
+  "1": {
+   "n_pairs": 164,
+   "alc_pair_mean": 0.19788238259176955,
+   "alc_benchmark_mean": 0.21580171104703982,
+   "ece_alc_pair_mean": 0.1484556624134051,
+   "brier_by_budget": {
+    "0": 0.25,
+    "1": 0.22279275841918597,
+    "3": 0.19856182154149402,
+    "7": 0.18511079760381427,
+    "15": 0.17484271393188489,
+    "31": 0.166207642924937
+   },
+   "folds": {
+    "matharena": {
+     "n_pairs": 36,
+     "alc_mean": 0.20713444668068248
+    },
+    "multi_swebench": {
+     "n_pairs": 66,
+     "alc_mean": 0.17262478820321503
+    },
+    "real_webagents": {
+     "n_pairs": 30,
+     "alc_mean": 0.20864959437175357
+    },
+    "researchcodebench": {
+     "n_pairs": 31,
+     "alc_mean": 0.22841823620004298
+    },
+    "swe_rebench": {
+     "n_pairs": 1,
+     "alc_mean": 0.2621814897795051
+    }
+   }
+  },
+  "2": {
+   "n_pairs": 152,
+   "alc_pair_mean": 0.1986241593082821,
+   "alc_benchmark_mean": 0.21856906736413975,
+   "ece_alc_pair_mean": 0.14526749978987583,
+   "brier_by_budget": {
+    "0": 0.25,
+    "1": 0.22007897592029102,
+    "3": 0.1981369570746826,
+    "7": 0.18777854599126031,
+    "15": 0.17710128028534092,
+    "31": 0.1700500745396712
+   },
+   "folds": {
+    "matharena": {
+     "n_pairs": 25,
+     "alc_mean": 0.22230688431230303
+    },
+    "multi_swebench": {
+     "n_pairs": 65,
+     "alc_mean": 0.1651442271069088
+    },
+    "real_webagents": {
+     "n_pairs": 30,
+     "alc_mean": 0.21651430133537752
+    },
+    "researchcodebench": {
+     "n_pairs": 31,
+     "alc_mean": 0.2304838793658266
+    },
+    "swe_rebench": {
+     "n_pairs": 1,
+     "alc_mean": 0.2583960447002828
+    }
+   }
+  }
+ },
+ "draws": {},
+ "in_sample": false,
+ "elapsed_seconds": 79.1
+}

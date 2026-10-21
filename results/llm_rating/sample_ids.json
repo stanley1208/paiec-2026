@@ -1,0 +1,1202 @@
+[
+{
+"benchmark": "matharena",
+"item_id": "03df56b571669925",
+"key": "ma:cmimc_2025:11",
+"b": -2.3723372007335986
+},
+{
+"benchmark": "matharena",
+"item_id": "03f251823fb819f1",
+"key": "ma:cmimc_2025:19",
+"b": -0.6508323189361453
+},
+{
+"benchmark": "matharena",
+"item_id": "04bf624a9f4b6654",
+"key": "ma:brumo_2025:18",
+"b": -4.714898747779927
+},
+{
+"benchmark": "matharena",
+"item_id": "04d6da2acd35a6f5",
+"key": "ma:smt_2025:31",
+"b": -4.681891573916293
+},
+{
+"benchmark": "matharena",
+"item_id": "0abfcc8c5a97838c",
+"key": "ma:smt_2025:45",
+"b": -4.115966299218375
+},
+{
+"benchmark": "matharena",
+"item_id": "0e3fdeb9110e1ffb",
+"key": "ma:arxivmath_1225:1",
+"b": 0.677144094045632
+},
+{
+"benchmark": "matharena",
+"item_id": "119d10e3d8a9cf21",
+"key": "ma:aime_2025:4",
+"b": -5.255982142992262
+},
+{
+"benchmark": "matharena",
+"item_id": "13116ce1801a08fb",
+"key": "ma:hmmt_feb_2026:17",
+"b": 4.036800689274158
+},
+{
+"benchmark": "matharena",
+"item_id": "17a1614f89c29a0e",
+"key": "ma:arxivmath_0226:1",
+"b": -2.7141222918132293
+},
+{
+"benchmark": "matharena",
+"item_id": "1c3bbce5e08ac6c2",
+"key": "ma:hmmt_nov_2025:7",
+"b": 1.1530972604227157
+},
+{
+"benchmark": "matharena",
+"item_id": "1fa79e6e223565e0",
+"key": "ma:hmmt_feb_2026:26",
+"b": 0.15783835389286865
+},
+{
+"benchmark": "matharena",
+"item_id": "2073999be8ee2311",
+"key": "ma:apex_shortlist:17",
+"b": 2.915062723658015
+},
+{
+"benchmark": "matharena",
+"item_id": "288290c46f4dafa2",
+"key": "ma:arxivmath_1225:6",
+"b": 7.487665636762588
+},
+{
+"benchmark": "matharena",
+"item_id": "32a530f2d52c93fd",
+"key": "ma:brumo_2025:15",
+"b": 0.11699076572964189
+},
+{
+"benchmark": "matharena",
+"item_id": "38bbf56438fd5deb",
+"key": "ma:cmimc_2025:10",
+"b": -1.9032811443900248
+},
+{
+"benchmark": "matharena",
+"item_id": "3b26004188902dae",
+"key": "ma:apex_shortlist:12",
+"b": 3.024517136175179
+},
+{
+"benchmark": "matharena",
+"item_id": "3bf50d130d3c29ca",
+"key": "ma:arxivmath_0226:8",
+"b": 4.938004947854224
+},
+{
+"benchmark": "matharena",
+"item_id": "431c83bab723762e",
+"key": "ma:arxivmath_0226:6",
+"b": 2.73975355396482
+},
+{
+"benchmark": "matharena",
+"item_id": "4377054818ca4f07",
+"key": "ma:smt_2025:1",
+"b": -4.128698881482819
+},
+{
+"benchmark": "matharena",
+"item_id": "44a707c0fb5929b8",
+"key": "ma:brumo_2025:11",
+"b": -2.855871935026071
+},
+{
+"benchmark": "matharena",
+"item_id": "44ad4fc2a4a60f89",
+"key": "ma:cmimc_2025:29",
+"b": -0.6508323189361453
+},
+{
+"benchmark": "matharena",
+"item_id": "48eda707bec411bd",
+"key": "ma:apex_shortlist:34",
+"b": 0.16933801941527693
+},
+{
+"benchmark": "matharena",
+"item_id": "4a6f58decc7f3d99",
+"key": "ma:hmmt_feb_2026:3",
+"b": -2.7028689361296934
+},
+{
+"benchmark": "matharena",
+"item_id": "4e849613232e3d43",
+"key": "ma:aime_2025:22",
+"b": -1.7842626277379838
+},
+{
+"benchmark": "matharena",
+"item_id": "50a69d033baba3b8",
+"key": "ma:aime_2025:5",
+"b": -2.707980262219325
+},
+{
+"benchmark": "matharena",
+"item_id": "50aa2099983c1257",
+"key": "ma:apex_shortlist:21",
+"b": 3.89964744149366
+},
+{
+"benchmark": "matharena",
+"item_id": "594dc5da586fa4bc",
+"key": "ma:aime_2025:3",
+"b": -5.004149925196753
+},
+{
+"benchmark": "matharena",
+"item_id": "5cce7e993e8224ad",
+"key": "ma:apex_shortlist:40",
+"b": 2.9141515807920353
+},
+{
+"benchmark": "matharena",
+"item_id": "61a42e00592140f1",
+"key": "ma:apex_2025:4",
+"b": 5.729764110052668
+},
+{
+"benchmark": "matharena",
+"item_id": "61d2af8f46f9a1a7",
+"key": "ma:apex_shortlist:1",
+"b": 3.0143418390174195
+},
+{
+"benchmark": "matharena",
+"item_id": "62686b9a6512db86",
+"key": "ma:brumo_2025:17",
+"b": -1.1504869513247922
+},
+{
+"benchmark": "matharena",
+"item_id": "64d012441dd3fff9",
+"key": "ma:arxivmath_0226:24",
+"b": 4.816385083047722
+},
+{
+"benchmark": "matharena",
+"item_id": "6af24caa97e8ae98",
+"key": "ma:cmimc_2025:39",
+"b": 1.1969230018174863
+},
+{
+"benchmark": "matharena",
+"item_id": "6f2dad43db96b33b",
+"key": "ma:arxivmath_0126:3",
+"b": 1.883639785160344
+},
+{
+"benchmark": "matharena",
+"item_id": "750cf9386f6b9f12",
+"key": "ma:hmmt_feb_2025:18",
+"b": 0.7238810737828179
+},
+{
+"benchmark": "matharena",
+"item_id": "78776dd8a2601f2c",
+"key": "ma:brumo_2025:13",
+"b": 1.454531604188872
+},
+{
+"benchmark": "matharena",
+"item_id": "7ca8ecb770732172",
+"key": "ma:hmmt_feb_2026:22",
+"b": -2.0015452417582003
+},
+{
+"benchmark": "matharena",
+"item_id": "8040824c809256a4",
+"key": "ma:aime_2025:28",
+"b": 0.8447293342982304
+},
+{
+"benchmark": "matharena",
+"item_id": "811baf11f1ce49e8",
+"key": "ma:hmmt_nov_2025:21",
+"b": -1.3290410527621217
+},
+{
+"benchmark": "matharena",
+"item_id": "8cf6a98329376819",
+"key": "ma:smt_2025:21",
+"b": -3.4312206963960703
+},
+{
+"benchmark": "matharena",
+"item_id": "95aadb43f7c5ece0",
+"key": "ma:hmmt_feb_2025:16",
+"b": -0.4888717733764711
+},
+{
+"benchmark": "matharena",
+"item_id": "a3a8a15c5a433520",
+"key": "ma:smt_2025:11",
+"b": -4.681891573916293
+},
+{
+"benchmark": "matharena",
+"item_id": "a8ac833618661790",
+"key": "ma:hmmt_feb_2025:6",
+"b": -1.506574744763985
+},
+{
+"benchmark": "matharena",
+"item_id": "b74844336ecb0b49",
+"key": "ma:smt_2025:38",
+"b": 0.7024736059272437
+},
+{
+"benchmark": "matharena",
+"item_id": "cac6f0ef32ab63dd",
+"key": "ma:brumo_2025:7",
+"b": -3.7672751195101375
+},
+{
+"benchmark": "matharena",
+"item_id": "cc65ef516e36c1ae",
+"key": "ma:apex_shortlist:36",
+"b": 3.2234386551904857
+},
+{
+"benchmark": "matharena",
+"item_id": "cf2c60aae88988ba",
+"key": "ma:cmimc_2025:8",
+"b": 0.44432265752110456
+},
+{
+"benchmark": "matharena",
+"item_id": "e3fd0a29b4f12a16",
+"key": "ma:hmmt_feb_2026:14",
+"b": -2.7843569037193796
+},
+{
+"benchmark": "matharena",
+"item_id": "eb2d56ef31331ab7",
+"key": "ma:apex_shortlist:32",
+"b": 2.1576253793387794
+},
+{
+"benchmark": "matharena",
+"item_id": "fec085ac1101b3aa",
+"key": "ma:hmmt_feb_2026:10",
+"b": 0.42872089800500424
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "033c586abfc7a7a7",
+"key": "033c586abfc7a7a7",
+"b": 0.9702440847670911
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "039159839bb1c3b9",
+"key": "039159839bb1c3b9",
+"b": -0.4421781640013888
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "08f1e5025d0d64da",
+"key": "08f1e5025d0d64da",
+"b": 1.1903188085060799
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "10fef04678574995",
+"key": "10fef04678574995",
+"b": 1.0102880492789152
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "1396cd11b8e4609c",
+"key": "1396cd11b8e4609c",
+"b": -3.4822620971024576
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "1a01c9c07f673dea",
+"key": "1a01c9c07f673dea",
+"b": 0.9528194232673258
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "1b62c10429e8845e",
+"key": "1b62c10429e8845e",
+"b": -2.0507628948594445
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "27a6b8db511691e0",
+"key": "27a6b8db511691e0",
+"b": 0.9674449703752236
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "28262e8d82d5f71e",
+"key": "28262e8d82d5f71e",
+"b": -1.16762123879252
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "2ac69d35b0e7f80f",
+"key": "2ac69d35b0e7f80f",
+"b": 0.9835455300309993
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "2d2b743af6050726",
+"key": "2d2b743af6050726",
+"b": -2.651683041392081
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "2fb18a486f491b25",
+"key": "2fb18a486f491b25",
+"b": -0.3178954247193985
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "382e992cb9fa28f2",
+"key": "382e992cb9fa28f2",
+"b": -2.9038282230704286
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "3b81b2c0dc691dd9",
+"key": "3b81b2c0dc691dd9",
+"b": -1.3635781913039233
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "4c77487a492b979f",
+"key": "4c77487a492b979f",
+"b": 1.5295346343819238
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "5d21a248ad173050",
+"key": "5d21a248ad173050",
+"b": 2.8833876101690668
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "5dda4d1e000a460a",
+"key": "5dda4d1e000a460a",
+"b": 1.0414259011231115
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "606f317ae2d866aa",
+"key": "606f317ae2d866aa",
+"b": 0.9708735866597581
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "61bc53b1cee76869",
+"key": "61bc53b1cee76869",
+"b": 0.9808258831250182
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "69cb76260cf5fcf6",
+"key": "69cb76260cf5fcf6",
+"b": 0.8940354442046082
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "6c66302ba30db771",
+"key": "6c66302ba30db771",
+"b": 1.5577057550963498
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "71027c9ba503b2ce",
+"key": "71027c9ba503b2ce",
+"b": 0.9495375280841452
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "77961ed265697908",
+"key": "77961ed265697908",
+"b": 0.8550709902255473
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "7b3bdde039f9baff",
+"key": "7b3bdde039f9baff",
+"b": 0.9608588313259351
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "834f0d688900d3bb",
+"key": "834f0d688900d3bb",
+"b": 2.919538586712503
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "85747ad75cdf6900",
+"key": "85747ad75cdf6900",
+"b": -4.842826360578716
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "91baabc1f06c29a9",
+"key": "91baabc1f06c29a9",
+"b": -0.3866182116872159
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "97767b47fe6c1f77",
+"key": "97767b47fe6c1f77",
+"b": -1.3263787569933485
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "9c38f3a7635a623f",
+"key": "9c38f3a7635a623f",
+"b": 0.9480269496177249
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "a1b7eb82e3d14181",
+"key": "a1b7eb82e3d14181",
+"b": 1.4032776984596382
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "a4ab217311a27057",
+"key": "a4ab217311a27057",
+"b": -0.24206270683471065
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "a95b2da3333bc326",
+"key": "a95b2da3333bc326",
+"b": 1.4707990421112709
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "acde57b0bc9dd9d5",
+"key": "acde57b0bc9dd9d5",
+"b": 0.8894415896666897
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "b953bcdfa464589f",
+"key": "b953bcdfa464589f",
+"b": 0.8364749229510152
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "ba3dba7c97bdd526",
+"key": "ba3dba7c97bdd526",
+"b": -1.1088487759296255
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "bae43211f74e4d56",
+"key": "bae43211f74e4d56",
+"b": 0.9695864843126386
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "c6bc8910037c41bf",
+"key": "c6bc8910037c41bf",
+"b": 0.9879972737934825
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "c906a3230f52bab1",
+"key": "c906a3230f52bab1",
+"b": 0.8476891882864098
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "c91ec40d1766e9c4",
+"key": "c91ec40d1766e9c4",
+"b": 0.01163973034682906
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "ca1d049919ec3a1d",
+"key": "ca1d049919ec3a1d",
+"b": 0.9610939192607356
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "cd81a79231f83ca2",
+"key": "cd81a79231f83ca2",
+"b": -1.0391552677000409
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "d9d84e9682ee3e85",
+"key": "d9d84e9682ee3e85",
+"b": -0.8596996409061846
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "da43c1c8c3e57e29",
+"key": "da43c1c8c3e57e29",
+"b": 0.8548999429056016
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "da9e4f2f5669d305",
+"key": "da9e4f2f5669d305",
+"b": -2.254841083490564
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "e607ec7fe44cf920",
+"key": "e607ec7fe44cf920",
+"b": 1.4745246493755535
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "e9bad80b728e6cec",
+"key": "e9bad80b728e6cec",
+"b": 0.8323421831284589
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "e9c058f8b36d159e",
+"key": "e9c058f8b36d159e",
+"b": -4.864450402810759
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "ee4c60fcfb9f2ac3",
+"key": "ee4c60fcfb9f2ac3",
+"b": 0.827472436204383
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "ee7b377747f49582",
+"key": "ee7b377747f49582",
+"b": -1.0891813362723815
+},
+{
+"benchmark": "multi_swebench",
+"item_id": "ef279ee147aba737",
+"key": "ef279ee147aba737",
+"b": -1.2173325274007314
+},
+{
+"benchmark": "real_webagents",
+"item_id": "015e8e9f7dd57ada",
+"key": "015e8e9f7dd57ada",
+"b": -0.095825244238301
+},
+{
+"benchmark": "real_webagents",
+"item_id": "0dc9ed9cf83425a0",
+"key": "0dc9ed9cf83425a0",
+"b": -0.678922674725739
+},
+{
+"benchmark": "real_webagents",
+"item_id": "11ed804210deb384",
+"key": "11ed804210deb384",
+"b": -0.42003528351286995
+},
+{
+"benchmark": "real_webagents",
+"item_id": "18168f6543e8ab9c",
+"key": "18168f6543e8ab9c",
+"b": -2.3962939581464915
+},
+{
+"benchmark": "real_webagents",
+"item_id": "1e5e20a93507bca2",
+"key": "1e5e20a93507bca2",
+"b": 0.649368512941508
+},
+{
+"benchmark": "real_webagents",
+"item_id": "20e51517cec37296",
+"key": "20e51517cec37296",
+"b": 1.3388035655976045
+},
+{
+"benchmark": "real_webagents",
+"item_id": "2accf0304d63019d",
+"key": "2accf0304d63019d",
+"b": 1.5710782387531983
+},
+{
+"benchmark": "real_webagents",
+"item_id": "2f51c64cb7a33424",
+"key": "2f51c64cb7a33424",
+"b": -0.16500847732632418
+},
+{
+"benchmark": "real_webagents",
+"item_id": "3b58cc912ee5246a",
+"key": "3b58cc912ee5246a",
+"b": 0.47848023966341335
+},
+{
+"benchmark": "real_webagents",
+"item_id": "47e364b1e813b624",
+"key": "47e364b1e813b624",
+"b": 3.2150585285449504
+},
+{
+"benchmark": "real_webagents",
+"item_id": "4b17ee0d31198210",
+"key": "4b17ee0d31198210",
+"b": 3.28517254836288
+},
+{
+"benchmark": "real_webagents",
+"item_id": "4c1f5478c7937d69",
+"key": "4c1f5478c7937d69",
+"b": -0.03471695899538109
+},
+{
+"benchmark": "real_webagents",
+"item_id": "5040c609f7444545",
+"key": "5040c609f7444545",
+"b": 0.18509823474007173
+},
+{
+"benchmark": "real_webagents",
+"item_id": "5ba364089ffe5458",
+"key": "5ba364089ffe5458",
+"b": -0.7028237109260549
+},
+{
+"benchmark": "real_webagents",
+"item_id": "5dc315490d54f717",
+"key": "5dc315490d54f717",
+"b": -1.9309963038142002
+},
+{
+"benchmark": "real_webagents",
+"item_id": "60904bf9f97f94c6",
+"key": "60904bf9f97f94c6",
+"b": -2.92248330855502
+},
+{
+"benchmark": "real_webagents",
+"item_id": "66cea0eebc35c661",
+"key": "66cea0eebc35c661",
+"b": -0.683698864571865
+},
+{
+"benchmark": "real_webagents",
+"item_id": "6a01adbbe076c84c",
+"key": "6a01adbbe076c84c",
+"b": 0.9833577523833867
+},
+{
+"benchmark": "real_webagents",
+"item_id": "6d054a7a0354fe4f",
+"key": "6d054a7a0354fe4f",
+"b": 2.4601019715660097
+},
+{
+"benchmark": "real_webagents",
+"item_id": "6f6612ffe40c7342",
+"key": "6f6612ffe40c7342",
+"b": 2.4140405527884723
+},
+{
+"benchmark": "real_webagents",
+"item_id": "710cbd2ff02f254b",
+"key": "710cbd2ff02f254b",
+"b": 1.352021171738003
+},
+{
+"benchmark": "real_webagents",
+"item_id": "75ce615ed011de58",
+"key": "75ce615ed011de58",
+"b": 0.3950383788775011
+},
+{
+"benchmark": "real_webagents",
+"item_id": "846b0be27593b727",
+"key": "846b0be27593b727",
+"b": -1.2426261464441948
+},
+{
+"benchmark": "real_webagents",
+"item_id": "87279dbe918dd476",
+"key": "87279dbe918dd476",
+"b": -3.007034535933855
+},
+{
+"benchmark": "real_webagents",
+"item_id": "88a17fd6f9574354",
+"key": "88a17fd6f9574354",
+"b": -2.346677735423593
+},
+{
+"benchmark": "real_webagents",
+"item_id": "8a8a43c1283f73ce",
+"key": "8a8a43c1283f73ce",
+"b": -1.021091204143283
+},
+{
+"benchmark": "real_webagents",
+"item_id": "8fa5ae27bcf00ae7",
+"key": "8fa5ae27bcf00ae7",
+"b": -1.76114618353411
+},
+{
+"benchmark": "real_webagents",
+"item_id": "938c5b55fcd7ff2a",
+"key": "938c5b55fcd7ff2a",
+"b": -0.5777869354837813
+},
+{
+"benchmark": "real_webagents",
+"item_id": "966ba3a0d3097a06",
+"key": "966ba3a0d3097a06",
+"b": 1.930464576446456
+},
+{
+"benchmark": "real_webagents",
+"item_id": "9cf8372ba33a4d24",
+"key": "9cf8372ba33a4d24",
+"b": -3.23735742623233
+},
+{
+"benchmark": "real_webagents",
+"item_id": "a05adda7b2d33c67",
+"key": "a05adda7b2d33c67",
+"b": 3.145810509461129
+},
+{
+"benchmark": "real_webagents",
+"item_id": "a0de3378d3d79eb4",
+"key": "a0de3378d3d79eb4",
+"b": 0.5086000510407203
+},
+{
+"benchmark": "real_webagents",
+"item_id": "a4ac7e5938bce81f",
+"key": "a4ac7e5938bce81f",
+"b": 0.839128603912083
+},
+{
+"benchmark": "real_webagents",
+"item_id": "a86535d1abb8bb78",
+"key": "a86535d1abb8bb78",
+"b": 2.388698448040583
+},
+{
+"benchmark": "real_webagents",
+"item_id": "ae0ce9cab81cf145",
+"key": "ae0ce9cab81cf145",
+"b": -1.3697871797759633
+},
+{
+"benchmark": "real_webagents",
+"item_id": "b059d340477614b1",
+"key": "b059d340477614b1",
+"b": -0.9024915311033808
+},
+{
+"benchmark": "real_webagents",
+"item_id": "b68769edba24ba98",
+"key": "b68769edba24ba98",
+"b": -2.8190134272342995
+},
+{
+"benchmark": "real_webagents",
+"item_id": "b888d62eeb8bd2dc",
+"key": "b888d62eeb8bd2dc",
+"b": 3.28517254836288
+},
+{
+"benchmark": "real_webagents",
+"item_id": "baed1cea6d730408",
+"key": "baed1cea6d730408",
+"b": 2.541596917070759
+},
+{
+"benchmark": "real_webagents",
+"item_id": "be8386060d4202d2",
+"key": "be8386060d4202d2",
+"b": -1.5712309743552182
+},
+{
+"benchmark": "real_webagents",
+"item_id": "c924677b78b35a66",
+"key": "c924677b78b35a66",
+"b": -1.4730908989539668
+},
+{
+"benchmark": "real_webagents",
+"item_id": "ce569733f86d73dc",
+"key": "ce569733f86d73dc",
+"b": 1.2611898403809527
+},
+{
+"benchmark": "real_webagents",
+"item_id": "d95543bbcdf1a2da",
+"key": "d95543bbcdf1a2da",
+"b": -3.123883468679386
+},
+{
+"benchmark": "real_webagents",
+"item_id": "dc6fa586db72069c",
+"key": "dc6fa586db72069c",
+"b": -1.5453312707081486
+},
+{
+"benchmark": "real_webagents",
+"item_id": "e0beb9614dec7a60",
+"key": "e0beb9614dec7a60",
+"b": -2.396293958146491
+},
+{
+"benchmark": "real_webagents",
+"item_id": "ebea947014a04d45",
+"key": "ebea947014a04d45",
+"b": 0.31895957232085254
+},
+{
+"benchmark": "real_webagents",
+"item_id": "f9caa8a36213404e",
+"key": "f9caa8a36213404e",
+"b": 2.525376744514575
+},
+{
+"benchmark": "real_webagents",
+"item_id": "fa14594f513b6b39",
+"key": "fa14594f513b6b39",
+"b": -2.8567500001283057
+},
+{
+"benchmark": "real_webagents",
+"item_id": "fa61e7583692a6aa",
+"key": "fa61e7583692a6aa",
+"b": -2.9168537286672978
+},
+{
+"benchmark": "real_webagents",
+"item_id": "ff4c16d6ed01ecf8",
+"key": "ff4c16d6ed01ecf8",
+"b": -0.6820585375732802
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "00e713a2174df492",
+"key": "00e713a2174df492",
+"b": 3.178397346863294
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "0a1515a25f0df4ac",
+"key": "0a1515a25f0df4ac",
+"b": -3.070682704526389
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "10623ce411156992",
+"key": "10623ce411156992",
+"b": -2.19318227433165
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "165184681ade20bd",
+"key": "165184681ade20bd",
+"b": 0.7246199641300645
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "1806d6b6e967b62d",
+"key": "1806d6b6e967b62d",
+"b": -2.19318227433165
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "1e4141e7a4c519f4",
+"key": "1e4141e7a4c519f4",
+"b": 3.178397346863294
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "2059e076e103f69e",
+"key": "2059e076e103f69e",
+"b": -0.26459418021938913
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "2175aae3c2db5b4d",
+"key": "2175aae3c2db5b4d",
+"b": -1.4633211191385374
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "29f27375753fa4e0",
+"key": "29f27375753fa4e0",
+"b": -1.8175323677882187
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "2dfcfd33b24383d8",
+"key": "2dfcfd33b24383d8",
+"b": -0.6123651850066146
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "2e4ccff7feb2fb61",
+"key": "2e4ccff7feb2fb61",
+"b": 2.425969434955393
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "2f3ca47b11ff5cc6",
+"key": "2f3ca47b11ff5cc6",
+"b": -3.070682704526389
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "317ae2ffc5ffea87",
+"key": "317ae2ffc5ffea87",
+"b": 1.9283425701139192
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "3249a20213071bb7",
+"key": "3249a20213071bb7",
+"b": 0.7246199641300644
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "32e6a37ab6ced04e",
+"key": "32e6a37ab6ced04e",
+"b": -2.3929773516510506
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "37a22da9c96c929a",
+"key": "37a22da9c96c929a",
+"b": -3.6354580040094175
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "3e797ddef4e8fb2e",
+"key": "3e797ddef4e8fb2e",
+"b": -0.4401119906775009
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "44e22028a70eefa4",
+"key": "44e22028a70eefa4",
+"b": 0.2971547932582973
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "4732969261cc2e41",
+"key": "4732969261cc2e41",
+"b": -2.19318227433165
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "58dbcc004a9c335c",
+"key": "58dbcc004a9c335c",
+"b": -3.33697280155827
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "59f4b0a4d602421e",
+"key": "59f4b0a4d602421e",
+"b": 3.178397346863294
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "5a5034a6c458a4b9",
+"key": "5a5034a6c458a4b9",
+"b": 3.178397346863294
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "61753687559123ef",
+"key": "61753687559123ef",
+"b": 0.7246199641300644
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "65d6aab05e2a8e5f",
+"key": "65d6aab05e2a8e5f",
+"b": -2.3929773516510506
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "66571b6516e2f65e",
+"key": "66571b6516e2f65e",
+"b": 0.7246199641300645
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "6b41172dc0c7bac0",
+"key": "6b41172dc0c7bac0",
+"b": 0.7246199641300645
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "6b7373f022393487",
+"key": "6b7373f022393487",
+"b": -3.070682704526389
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "70728b11418f47c0",
+"key": "70728b11418f47c0",
+"b": 3.178397346863294
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "793b13b39e6c52ca",
+"key": "793b13b39e6c52ca",
+"b": 0.5033953466842581
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "81880c30de08aaf4",
+"key": "81880c30de08aaf4",
+"b": 3.178397346863294
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "886bbaa3c57cba7c",
+"key": "886bbaa3c57cba7c",
+"b": 3.178397346863294
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "88aa139ae9e18495",
+"key": "88aa139ae9e18495",
+"b": 0.9662757492133403
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "914ceba3b22bfc25",
+"key": "914ceba3b22bfc25",
+"b": -2.828167116752856
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "91c870e39e5b5f48",
+"key": "91c870e39e5b5f48",
+"b": -0.2645941802193891
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "95dff3161dea568a",
+"key": "95dff3161dea568a",
+"b": 3.178397346863294
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "990e8499b6c70768",
+"key": "990e8499b6c70768",
+"b": 0.7246199641300645
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "9b819f694ec07bcf",
+"key": "9b819f694ec07bcf",
+"b": -2.19318227433165
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "afb7cff6e49180ea",
+"key": "afb7cff6e49180ea",
+"b": -3.9793024310090512
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "bdcc68492802b537",
+"key": "bdcc68492802b537",
+"b": -0.44011199067750084
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "c041c6e447c96927",
+"key": "c041c6e447c96927",
+"b": -0.6123651850066145
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "c1d03572bd66c3e9",
+"key": "c1d03572bd66c3e9",
+"b": -0.44011199067750084
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "cdc1eb2546cd310d",
+"key": "cdc1eb2546cd310d",
+"b": -2.0019677336373505
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "d3d70b5acfc7d021",
+"key": "d3d70b5acfc7d021",
+"b": 1.5491505833534467
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "d73324cfcbcefbd5",
+"key": "d73324cfcbcefbd5",
+"b": 3.178397346863294
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "e3fbe178b7c7ccc6",
+"key": "e3fbe178b7c7ccc6",
+"b": -2.19318227433165
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "e89e3cbbb52a97e2",
+"key": "e89e3cbbb52a97e2",
+"b": -0.7825598073950779
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "ed98bf5e060e2879",
+"key": "ed98bf5e060e2879",
+"b": -4.391043417381097
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "ef3300a04b5f7366",
+"key": "ef3300a04b5f7366",
+"b": -2.603636144811775
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "f49ea2d0695175a5",
+"key": "f49ea2d0695175a5",
+"b": 3.178397346863294
+},
+{
+"benchmark": "researchcodebench",
+"item_id": "f61d9a733730f442",
+"key": "f61d9a733730f442",
+"b": -1.291189099947119
+}
+]

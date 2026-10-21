@@ -1,0 +1,29 @@
+% Appendix: prompts -- drafted by Claude (2026-10-21). Text copied from paiec/llm_rating_core.py and paiec/guess_core.py.
+\section{Prompts}\label{app:prompt}
+
+Both requests go to \texttt{claude-opus-5-5} with effort \texttt{low}, at most 4,000 output tokens, a server-side fallback to \texttt{claude-opus-4-8}, and structured output under a JSON schema with a single integer field (\texttt{rating} or \texttt{success\_percent}). Line breaks inside a paragraph below are typesetting only.
+
+\paragraph{Rating request (V4, V5).} System prompt:
+\begin{quote}\small
+You estimate how hard benchmark tasks are for current AI systems: large language models and LLM-based agents released 2023-2026, from small open models to frontier models.
+
+Rate the task you are given on a scale from 1 to 10:\\
+1 = almost every such AI system completes it correctly\\
+5 = about half of them do\\
+10 = almost none of them do
+
+Judge from the task itself: the knowledge it needs, the number of reasoning or action steps, how long and intricate the required output is, whether it needs tools, code execution or interaction with an environment, and how ambiguous the success criterion is. Do not try to solve the task.
+
+Reply with only the integer rating.
+\end{quote}
+The user message is \texttt{Task features: \{features\}}, a blank line, \texttt{Task:} and the item's content, with \texttt{(none)} for empty features. During scoring the content is cut at 150,000 characters; the offline ratings used the full content.
+
+\paragraph{Guess request (V5).} System prompt:
+\begin{quote}\small
+You estimate how well AI systems perform on benchmarks. An AI system is a language model, possibly run inside an agent harness, with its settings. You will see the details recorded for one AI system (some fields may be empty) and one example task from one benchmark.
+
+Estimate the percentage of this benchmark's tasks that this AI system completes correctly, from 0 (none) to 100 (all). Use what you know about the system: its developer, release date, size, harness and settings. Judge how hard the benchmark is from the example task. Do not try to solve the task.
+
+Reply with only the integer percentage.
+\end{quote}
+The user message is \texttt{AI system:} followed by one line \texttt{field: value} for each non-empty subject field, in the platform's order, then a blank line, \texttt{Example task from the benchmark:}, \texttt{Features: \{features\}} and the task's content. A task longer than 1,500 characters shows its first and last 750 characters around a \texttt{[...]} line. The check of subject strength in Section~\ref{sec:method} used the same prompt, reworded for three example tasks, drawn once per benchmark (per subject group on Multi-SWE-bench) instead of from the subject's own items, and leaving out problems given only as an image.

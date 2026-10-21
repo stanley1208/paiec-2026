@@ -1,0 +1,9 @@
+{
+  "description": "All eligible pairs, including those above 1,000 items; each pair sees only its own labels.",
+  "seeds": [0, 1, 2],
+  "min_pair_items": 80,
+  "max_pair_items": null,
+  "evidence": "pair",
+  "split": "independent",
+  "draws": 0
+}

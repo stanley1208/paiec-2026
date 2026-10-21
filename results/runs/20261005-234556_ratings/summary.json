@@ -1,0 +1,285 @@
+{
+ "table": {
+  "k0 version3": {
+   "pairs": 594,
+   "alc_pair_mean": 0.20741629846068546,
+   "brier": {
+    "0": 0.25,
+    "1": 0.22972951712651155,
+    "3": 0.2076444413802597,
+    "7": 0.19535234885466657,
+    "15": 0.18770277736009303,
+    "31": 0.18330481516379293
+   },
+   "vs_unrated": {
+    "alc_diff": 0.0,
+    "alc_diff_se": 0.0
+   },
+   "vs_unrated_by_benchmark": {
+    "matharena": {
+     "alc_diff": 0.0,
+     "alc_diff_se": 0.0
+    },
+    "multi_swebench": {
+     "alc_diff": 0.0,
+     "alc_diff_se": 0.0
+    },
+    "real_webagents": {
+     "alc_diff": 0.0,
+     "alc_diff_se": 0.0
+    },
+    "researchcodebench": {
+     "alc_diff": 0.0,
+     "alc_diff_se": 0.0
+    }
+   }
+  },
+  "k0 version3_rated": {
+   "pairs": 594,
+   "alc_pair_mean": 0.18863481985146752,
+   "brier": {
+    "0": 0.25,
+    "1": 0.22285114258029728,
+    "3": 0.18593512726991254,
+    "7": 0.16997803250573082,
+    "15": 0.16124551177289434,
+    "31": 0.15632857025700497
+   },
+   "vs_unrated": {
+    "alc_diff": -0.018781478609217958,
+    "alc_diff_se": 0.002099720455463651
+   },
+   "vs_unrated_by_benchmark": {
+    "matharena": {
+     "alc_diff": -0.028284785285789944,
+     "alc_diff_se": 0.0019306688725860542
+    },
+    "multi_swebench": {
+     "alc_diff": -0.004684197552297847,
+     "alc_diff_se": 0.004423879785559976
+    },
+    "real_webagents": {
+     "alc_diff": -0.008602143115500284,
+     "alc_diff_se": 0.002930231741861936
+    },
+    "researchcodebench": {
+     "alc_diff": -0.04119546169974037,
+     "alc_diff_se": 0.0037804917423480866
+    }
+   }
+  },
+  "k0 version2": {
+   "pairs": 594,
+   "alc_pair_mean": 0.20331195259928522,
+   "brier": {
+    "0": 0.23412344034081223,
+    "1": 0.22122743681404283,
+    "3": 0.20434081143662336,
+    "7": 0.1946460360826234,
+    "15": 0.1876160758278702,
+    "31": 0.18333536532972028
+   },
+   "vs_unrated": {
+    "alc_diff": 0.0,
+    "alc_diff_se": 0.0
+   },
+   "vs_unrated_by_benchmark": {
+    "matharena": {
+     "alc_diff": 0.0,
+     "alc_diff_se": 0.0
+    },
+    "multi_swebench": {
+     "alc_diff": 0.0,
+     "alc_diff_se": 0.0
+    },
+    "real_webagents": {
+     "alc_diff": 0.0,
+     "alc_diff_se": 0.0
+    },
+    "researchcodebench": {
+     "alc_diff": 0.0,
+     "alc_diff_se": 0.0
+    }
+   }
+  },
+  "k0 version2_rated": {
+   "pairs": 594,
+   "alc_pair_mean": 0.18442626207858714,
+   "brier": {
+    "0": 0.23412344034081223,
+    "1": 0.21409680909401396,
+    "3": 0.18237867771454855,
+    "7": 0.16923294942996667,
+    "15": 0.161170935293982,
+    "31": 0.1563804373800368
+   },
+   "vs_unrated": {
+    "alc_diff": -0.018885690520698075,
+    "alc_diff_se": 0.0020431775228658667
+   },
+   "vs_unrated_by_benchmark": {
+    "matharena": {
+     "alc_diff": -0.02819153653811176,
+     "alc_diff_se": 0.0019305828142701005
+    },
+    "multi_swebench": {
+     "alc_diff": -0.005145155668745097,
+     "alc_diff_se": 0.004261877878023694
+    },
+    "real_webagents": {
+     "alc_diff": -0.008608613422319356,
+     "alc_diff_se": 0.002880979260721324
+    },
+    "researchcodebench": {
+     "alc_diff": -0.041009042638534776,
+     "alc_diff_se": 0.0036800100186047896
+    }
+   }
+  },
+  "k1 version3": {
+   "pairs": 594,
+   "alc_pair_mean": 0.205829448137057,
+   "brier": {
+    "0": 0.25,
+    "1": 0.22946511891613192,
+    "3": 0.20710444394476932,
+    "7": 0.19405849061285338,
+    "15": 0.18470150587220852,
+    "31": 0.1776353626786438
+   },
+   "vs_unrated": {
+    "alc_diff": 0.0,
+    "alc_diff_se": 0.0
+   },
+   "vs_unrated_by_benchmark": {
+    "matharena": {
+     "alc_diff": 0.0,
+     "alc_diff_se": 0.0
+    },
+    "multi_swebench": {
+     "alc_diff": 0.0,
+     "alc_diff_se": 0.0
+    },
+    "real_webagents": {
+     "alc_diff": 0.0,
+     "alc_diff_se": 0.0
+    },
+    "researchcodebench": {
+     "alc_diff": 0.0,
+     "alc_diff_se": 0.0
+    }
+   }
+  },
+  "k1 version3_rated": {
+   "pairs": 594,
+   "alc_pair_mean": 0.18624177095589012,
+   "brier": {
+    "0": 0.25,
+    "1": 0.21585343335045776,
+    "3": 0.1848875033304423,
+    "7": 0.16902536230893148,
+    "15": 0.15972727089396221,
+    "31": 0.1534305697913136
+   },
+   "vs_unrated": {
+    "alc_diff": -0.019587677181166906,
+    "alc_diff_se": 0.0018204732770364341
+   },
+   "vs_unrated_by_benchmark": {
+    "matharena": {
+     "alc_diff": -0.027613858868752523,
+     "alc_diff_se": 0.0019770647931483406
+    },
+    "multi_swebench": {
+     "alc_diff": -0.008888613948764279,
+     "alc_diff_se": 0.0038027195885428724
+    },
+    "real_webagents": {
+     "alc_diff": -0.009911079263071894,
+     "alc_diff_se": 0.00275386771043914
+    },
+    "researchcodebench": {
+     "alc_diff": -0.03690650782484947,
+     "alc_diff_se": 0.0032729472030226456
+    }
+   }
+  },
+  "k1 version2": {
+   "pairs": 594,
+   "alc_pair_mean": 0.20173126987612316,
+   "brier": {
+    "0": 0.23412344034081223,
+    "1": 0.22096999932416037,
+    "3": 0.20380490006689103,
+    "7": 0.19336083976772522,
+    "15": 0.18461900295788103,
+    "31": 0.17767977418710407
+   },
+   "vs_unrated": {
+    "alc_diff": 0.0,
+    "alc_diff_se": 0.0
+   },
+   "vs_unrated_by_benchmark": {
+    "matharena": {
+     "alc_diff": 0.0,
+     "alc_diff_se": 0.0
+    },
+    "multi_swebench": {
+     "alc_diff": 0.0,
+     "alc_diff_se": 0.0
+    },
+    "real_webagents": {
+     "alc_diff": 0.0,
+     "alc_diff_se": 0.0
+    },
+    "researchcodebench": {
+     "alc_diff": 0.0,
+     "alc_diff_se": 0.0
+    }
+   }
+  },
+  "k1 version2_rated": {
+   "pairs": 594,
+   "alc_pair_mean": 0.18193520947296465,
+   "brier": {
+    "0": 0.23412344034081223,
+    "1": 0.20664794312822235,
+    "3": 0.18131111602097003,
+    "7": 0.16827180169472364,
+    "15": 0.15964321691020616,
+    "31": 0.15348049888058998
+   },
+   "vs_unrated": {
+    "alc_diff": -0.019796060403158493,
+    "alc_diff_se": 0.0017718902441673844
+   },
+   "vs_unrated_by_benchmark": {
+    "matharena": {
+     "alc_diff": -0.027709768925393154,
+     "alc_diff_se": 0.001939290412786353
+    },
+    "multi_swebench": {
+     "alc_diff": -0.0094473277135865,
+     "alc_diff_se": 0.003669988723807921
+    },
+    "real_webagents": {
+     "alc_diff": -0.009905792122220397,
+     "alc_diff_se": 0.0027208444302348725
+    },
+    "researchcodebench": {
+     "alc_diff": -0.0367802158649264,
+     "alc_diff_se": 0.003222141298626591
+    }
+   }
+  }
+ },
+ "decision": {
+  "checks": {
+   "gain_at_least_0.003_and_2se": true,
+   "improves_multi_swebench": true,
+   "improves_real_webagents": true
+  },
+  "go": true
+ },
+ "elapsed_seconds": 203.0
+}

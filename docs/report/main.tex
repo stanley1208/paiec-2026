@@ -1,0 +1,69 @@
+\documentclass{article}
+
+\usepackage[sglblindworkshop, final]{neurips_2026}
+\workshoptitle{Predictive AI Evaluation Competition}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+\title{LLM priors on item difficulty and subject ability for predicting AI benchmark outcomes}
+
+\author{
+  Stanley Mei \\
+  Stanford University \\
+  \texttt{smei@stanford.edu}
+}
+
+\begin{document}
+
+\maketitle
+
+% Abstract -- drafted by Claude (2026-10-21).
+\begin{abstract}
+  The Predictive AI Evaluation Competition asks for the probability that an AI system, called a subject, solves an item of a hidden benchmark, given the subject's recorded fields, the item's text and the labels acquired so far for this subject and for other subjects scored with it. My entry chains small Bayesian models: a normal prior on the subject's ability, updated on its labels, and item difficulties pooled from other subjects' labels. Claude Opus 5.5 supplies two further priors, a rating of each item's difficulty and a guess of each subject's success rate, each calibrated on public data and trusted only as far as a worst-case analysis allows. Holding out one public benchmark at a time, on items that all have a rating, the ratings improved Brier ALC by 0.0144 (SE 0.0011) and the guesses by a further 0.0135 (SE 0.0013). On one hosted draw, the guesses lowered the Brier score before any label from 0.25 to 0.180. Claude may have seen results on the public benchmarks in training, so the gains could be smaller on new ones.
+\end{abstract}
+
+\input{sections/01_intro}
+\input{sections/02_data}
+\input{sections/03_method}
+\input{sections/04_llm}
+\input{sections/05_results}
+\input{sections/06_negative}
+\input{sections/07_limitations}
+\input{sections/08_repro}
+\input{sections/09_conclusion}
+
+\begin{ack}
+I thank the organizers of the Predictive AI Evaluation Competition for the data, the starting kit and their answers on Discord. [TO CONFIRM: funding of the API costs and any competing interests.]
+\end{ack}
+
+{\small
+\bibliographystyle{abbrvnat}
+\bibliography{references}
+}
+
+\appendix
+\input{sections/appendix_harness}
+\input{sections/appendix_model}
+\input{sections/appendix_rules}
+\input{sections/appendix_prompts}
+\input{sections/appendix_engineering}
+\input{sections/appendix_datacard}
+\input{sections/appendix_repro}
+\input{sections/appendix_impact}
+
+\newpage
+\input{sections/checklist}
+
+\end{document}

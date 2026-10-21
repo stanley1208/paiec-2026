@@ -1,0 +1,11 @@
+{
+  "description": "Hidden-sized pairs with one partner pair, as in scripts/run_pooling.py (the config of run 20261005-213957_item_pooling-scale0.0-hidden-partners1).",
+  "seeds": [0, 1, 2],
+  "min_pair_items": 60,
+  "max_pair_items": 1000,
+  "evidence": "partners",
+  "partners": 1,
+  "pool_items": 400,
+  "split": "independent",
+  "draws": 0
+}

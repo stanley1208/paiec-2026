@@ -1,0 +1,86 @@
+% NeurIPS paper checklist -- questions from https://neurips.cc/public/guides/PaperChecklist (2026); answers drafted by Claude (2026-10-21).
+\section*{NeurIPS Paper Checklist}
+
+\begin{enumerate}
+
+\item {\bf Claims}
+  \item[] Question: Do the main claims made in the abstract and introduction accurately reflect the paper's contributions and scope?
+  \item[] Answer: \answerYes{}
+  \item[] Justification: The gains claimed are those of Section~\ref{sec:results}, each with its setting and standard error. The abstract and introduction say that the formative result is a single draw and that memorization may inflate the offline gains, and Section~\ref{sec:limitations} discusses both.
+
+\item {\bf Limitations}
+  \item[] Question: Does the paper discuss the limitations of the work performed by the authors?
+  \item[] Answer: \answerYes{}
+  \item[] Justification: Section~\ref{sec:limitations} lists the specific limitations, among them single formative draws of 8 or 9 pairs, possible memorization of the public benchmarks by the LLM, and the dependence on a paid, nondeterministic API.
+
+\item {\bf Theory assumptions and proofs}
+  \item[] Question: For each theoretical result, does the paper provide the full set of assumptions and a complete (and correct) proof?
+  \item[] Answer: \answerNA{}
+  \item[] Justification: The paper has no theoretical results; the one approximation it uses is cited and its error is reported (Section~\ref{sec:method}).
+
+\item {\bf Experimental result reproducibility}
+  \item[] Question: Does the paper fully disclose all the information needed to reproduce the main experimental results of the paper to the extent that it affects the main claims and/or conclusions of the paper (regardless of whether the code and data are provided or not)?
+  \item[] Answer: \answerYes{}
+  \item[] Justification: Sections~\ref{sec:data} and~\ref{sec:method} and Appendices~\ref{app:harness}, \ref{app:model} and~\ref{app:prompt} specify the data, the harness, the models and the prompts; the LLM outputs are released, and Section~\ref{sec:llm} explains why hosted runs cannot be reproduced exactly.
+
+\item {\bf Open access to data and code}
+  \item[] Question: Does the paper provide open access to the data and code, with sufficient instructions to faithfully reproduce the main experimental results, as described in supplemental material?
+  \item[] Answer: \answerYes{}
+  \item[] Justification: Section~\ref{sec:repro} gives the repository and Appendix~\ref{app:repro} the data revision and the commands; measurement-db is publicly available (gated on Hugging Face: users accept its terms), and the LLM ratings and guesses are in the repository.
+
+\item {\bf Experimental setting/details}
+  \item[] Question: Does the paper specify all the training and test details (e.g., data splits, hyperparameters, how they were chosen, type of optimizer, etc.) necessary to understand the results?
+  \item[] Answer: \answerYes{}
+  \item[] Justification: Section~\ref{sec:data} defines the splits and settings; Section~\ref{sec:method} and Appendix~\ref{app:model} give every hyperparameter and how it was set, Appendix~\ref{app:rules} the rules that chose the trust levels and the gate, and Section~\ref{sec:data} the choices made without a rule.
+
+\item {\bf Experiment statistical significance}
+  \item[] Question: Does the paper report error bars suitably and correctly defined or other appropriate information about the statistical significance of the experiments?
+  \item[] Answer: \answerYes{}
+  \item[] Justification: Offline differences carry one cluster-robust standard error over subject--benchmark pairs and seeds 0--2 (Eq.~\eqref{eq:se}); formative results carry a standard error over pairs and are labeled single draws.
+
+\item {\bf Experiments compute resources}
+  \item[] Question: For each experiment, does the paper provide sufficient information on the computer resources (type of compute workers, memory, time of execution) needed to reproduce the experiments?
+  \item[] Answer: \answerYes{}
+  \item[] Justification: Section~\ref{sec:repro} gives the hardware, the longest run time and the API costs; each run's \texttt{summary.json} records its own time.
+
+\item {\bf Code of ethics}
+  \item[] Question: Does the research conducted in the paper conform, in every respect, with the NeurIPS Code of Ethics?
+  \item[] Answer: \answerYes{}
+  \item[] Justification: The work uses public benchmark data and an API allowed by the competition, and involves no human subjects.
+
+\item {\bf Broader impacts}
+  \item[] Question: Does the paper discuss both potential positive societal impacts and negative societal impacts of the work performed?
+  \item[] Answer: \answerYes{}
+  \item[] Justification: Appendix~\ref{app:impact} discusses predictions standing in for running evaluations and how they can mislead; Section~\ref{sec:limitations} covers the dependence on a proprietary API.
+
+\item {\bf Safeguards}
+  \item[] Question: Does the paper describe safeguards that have been put in place for responsible release of data or models that have a high risk for misuse?
+  \item[] Answer: \answerNA{}
+  \item[] Justification: The release consists of small statistical models and LLM ratings of public benchmark items, with no high risk of misuse.
+
+\item {\bf Licenses for existing assets}
+  \item[] Question: Are the creators or original owners of assets (e.g., code, data, models), used in the paper, properly credited and are the license and terms of use explicitly mentioned and properly respected?
+  \item[] Answer: \answerYes{}
+  \item[] Justification: Appendix~\ref{app:datacard} gives each asset's version and license and the terms that cover the LLM outputs; the starting kit has no license, so it is not redistributed, and the repository says where to download it.
+
+\item {\bf New assets}
+  \item[] Question: Are new assets introduced in the paper well documented and is the documentation provided alongside the assets?
+  \item[] Answer: \answerYes{}
+  \item[] Justification: Appendix~\ref{app:datacard} documents the released ratings and guesses, and README files in the repository describe each.
+
+\item {\bf Crowdsourcing and research with human subjects}
+  \item[] Question: For crowdsourcing experiments and research with human subjects, does the paper include the full text of instructions given to participants and screenshots, if applicable, as well as details about compensation (if any)?
+  \item[] Answer: \answerNA{}
+  \item[] Justification: No crowdsourcing or human subjects.
+
+\item {\bf Institutional review board (IRB) approvals or equivalent for research with human subjects}
+  \item[] Question: Does the paper describe potential risks incurred by study participants, whether such risks were disclosed to the subjects, and whether Institutional Review Board (IRB) approvals (or an equivalent approval/review based on the requirements of your country or institution) were obtained?
+  \item[] Answer: \answerNA{}
+  \item[] Justification: No human subjects.
+
+\item {\bf Declaration of LLM usage}
+  \item[] Question: Does the paper describe the usage of LLMs if it is an important, original, or non-standard component of the core methods in this research?
+  \item[] Answer: \answerYes{}
+  \item[] Justification: Claude Opus 5.5 rates items and guesses subject strength inside the method (Sections~\ref{sec:method} and~\ref{sec:llm}, Appendix~\ref{app:prompt}); its use in development and writing is described in Section~\ref{sec:repro}.
+
+\end{enumerate}

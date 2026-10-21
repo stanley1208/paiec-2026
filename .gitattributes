@@ -1,0 +1,4 @@
+# Keep LF line endings everywhere so files built on Windows match the Linux runtime.
+* text=auto eol=lf
+*.zip binary
+*.parquet binary

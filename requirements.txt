@@ -1,0 +1,8 @@
+# Local development and the offline harness (Python 3.13). The submission itself is stdlib-only.
+huggingface_hub==0.32.3
+matplotlib==3.9.2  # report figure only
+numpy==1.26.4
+pandas==2.2.3
+pyarrow==20.0.0
+pytest==9.0.3
+scipy==1.14.1

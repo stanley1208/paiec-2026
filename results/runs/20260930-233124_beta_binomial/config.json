@@ -1,0 +1,177 @@
+{
+ "predictor": "beta_binomial",
+ "options": {},
+ "in_sample": false,
+ "config_file": "C:\\AIMS\\configs\\default.json",
+ "config": {
+  "description": "Codabench-like: pairs up to 1,000 items, each pair sees only its own labels.",
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "min_pair_items": 80,
+  "max_pair_items": 1000,
+  "evidence": "pair",
+  "split": "independent",
+  "draws": 1000
+ },
+ "settings": [
+  {
+   "seed": 0,
+   "min_pair_items": 80,
+   "max_pair_items": 1000,
+   "evidence": "pair",
+   "split": "independent",
+   "strict_copies": true
+  },
+  {
+   "seed": 1,
+   "min_pair_items": 80,
+   "max_pair_items": 1000,
+   "evidence": "pair",
+   "split": "independent",
+   "strict_copies": true
+  },
+  {
+   "seed": 2,
+   "min_pair_items": 80,
+   "max_pair_items": 1000,
+   "evidence": "pair",
+   "split": "independent",
+   "strict_copies": true
+  }
+ ],
+ "provenance": {
+  "git_commit": "b4117263762aa40db5679c3b0b00a0b0b1b775c0",
+  "git_status": [
+   " M paiec/baseline_core.py",
+   " M paiec/baselines.py",
+   " M paiec/export.py",
+   " M paiec/summary.py",
+   " M scripts/run_harness.py",
+   " M submissions/baseline/baseline_core.py",
+   " M submissions/baseline/model.py",
+   " M submissions/baseline/params.json",
+   " M tests/test_baselines.py"
+  ],
+  "git_diff_sha256": "24d03197a57dd552536ea3653b963a42b91a8164fe8c3089f3f081d20fd5f41d",
+  "untracked_files": {},
+  "python": "3.13.2",
+  "packages": {
+   "pandas": "2.2.3",
+   "pyarrow": "20.0.0",
+   "numpy": "1.26.4"
+  },
+  "data_repo": "aims-foundations/measurement-db",
+  "data_revision": "bc8204d811823da849c6686bf124d4ca9f82e4de",
+  "data_manifest": {
+   "repo_id": "aims-foundations/measurement-db",
+   "revision": "bc8204d811823da849c6686bf124d4ca9f82e4de",
+   "files": {
+    "matharena/benchmarks.parquet": {
+     "bytes": 16804,
+     "sha256": "1a57bc6be40daa337a396fc6eb3a33111e4110ff40d92f3b199644c1d0fdeeb7"
+    },
+    "matharena/items.parquet": {
+     "bytes": 310264,
+     "sha256": "fb420494ce62adf519b12d8aa5101d5b2a47c6c246897c207c4860cb74ebf26a"
+    },
+    "matharena/response.parquet": {
+     "bytes": 1748755,
+     "sha256": "33aa835e229e56c167c3efdecdddd6bc76ba53f51d9e72a1e2136616a2e8ffcd"
+    },
+    "matharena/subjects.parquet": {
+     "bytes": 13588,
+     "sha256": "aeec4d5ae598d645d35b991cdc5e7fe73f4e529640f341228b6ee9c0c583153f"
+    },
+    "mmdocrag/benchmarks.parquet": {
+     "bytes": 16854,
+     "sha256": "7fdaa5b0e6dcb90ff6353ce28c626779a84a151d4d09a7ee9bc7045ecfde2ee5"
+    },
+    "mmdocrag/items.parquet": {
+     "bytes": 388955,
+     "sha256": "ee84a597cddc60ecbe5878bb049c3562d4244cb932778eecae83e421ecaa24de"
+    },
+    "mmdocrag/response.parquet": {
+     "bytes": 6439197,
+     "sha256": "bd4030df247315cb093c47da7b325caefb9d428c2f709edbf27bf918fb1da5bf"
+    },
+    "mmdocrag/subjects.parquet": {
+     "bytes": 9839,
+     "sha256": "e96520402fcd4490a1aba25dcc8cc8dde70bf0ec3a2127ebbdc4d03b96dff8ce"
+    },
+    "multi_swebench/benchmarks.parquet": {
+     "bytes": 16919,
+     "sha256": "89efc2f590d1184180f036ced090614c24267c783bd889f6a338c2ff657b59eb"
+    },
+    "multi_swebench/items.parquet": {
+     "bytes": 6170506,
+     "sha256": "eaf624e7cd49e9b43a05ec561bd451c5629b1f6c55387d33f2191286353fb778"
+    },
+    "multi_swebench/response.parquet": {
+     "bytes": 1180533,
+     "sha256": "33d31a4f3092a9408853d44235b06292708d2ab560a8af516756fd068db46f45"
+    },
+    "multi_swebench/subjects.parquet": {
+     "bytes": 9456,
+     "sha256": "06eca4d34e9201ff58c62923a7d76dc315cb9748b308aab21e43e111e3faac49"
+    },
+    "real_webagents/benchmarks.parquet": {
+     "bytes": 16595,
+     "sha256": "49454f9a3012f78bc808aa7bcfd36f8ea0506c42579eaaba017577d893ad8a14"
+    },
+    "real_webagents/items.parquet": {
+     "bytes": 48588,
+     "sha256": "5908db1f903c608e00911d50ca7ec0fa0e1b5bf4a09365d4ad52e0e1fde8f136"
+    },
+    "real_webagents/response.parquet": {
+     "bytes": 94888,
+     "sha256": "b42381f563f513f61e18e0584fbe8d0e3a0fb48f69794cfcd5655ab9eaeff642"
+    },
+    "real_webagents/subjects.parquet": {
+     "bytes": 8365,
+     "sha256": "e563ff232af0d2241220e9857cdc65c64b67b9301aae594677a60ff3308e7fa5"
+    },
+    "researchcodebench/benchmarks.parquet": {
+     "bytes": 16391,
+     "sha256": "d1c8acda9cb98369a00f9c9b3aee63d9cc27e516d5d13ebc630b2662764faf23"
+    },
+    "researchcodebench/items.parquet": {
+     "bytes": 8928605,
+     "sha256": "3aee135afa6b206cbce8867beca681811d95579db34a0c0eed1822d8c6b01268"
+    },
+    "researchcodebench/response.parquet": {
+     "bytes": 137884,
+     "sha256": "246db2bce64309a6c81346b5650a2ba93cb4abe67367a9d1ea2eef35407f24e9"
+    },
+    "researchcodebench/subjects.parquet": {
+     "bytes": 8321,
+     "sha256": "c8dbb5ac589749270ddea2be6e456ea22b991d5ffc5107fd80d0865a77e94b3a"
+    },
+    "swe_rebench/benchmarks.parquet": {
+     "bytes": 17988,
+     "sha256": "599823ff6cd9a8bf6d8c22f0e51f40f0f508569c6e41befecbbd62af8fd1cad7"
+    },
+    "swe_rebench/items.parquet": {
+     "bytes": 39763649,
+     "sha256": "78fd183af256d62c7947a74ee714018d2eb3cce13191fa2d5f2f4593df8e3c5b"
+    },
+    "swe_rebench/response.parquet": {
+     "bytes": 1505550,
+     "sha256": "2674db69e24f64a5a296378781d181b97cc4c6e07c5319f2ae351a04cfeebffd"
+    },
+    "swe_rebench/subjects.parquet": {
+     "bytes": 6747,
+     "sha256": "4f2f5f3481c2394acb74f2905a51dd12d4191c946f44dc48bf2ff1ebcee448ad"
+    }
+   }
+  },
+  "submission_files": {},
+  "command": [
+   "scripts/run_harness.py",
+   "--predictor",
+   "beta_binomial"
+  ]
+ }
+}
