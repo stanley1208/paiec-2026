@@ -19,12 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-This license does not cover docs/report/neurips_2026.sty (the unmodified
-NeurIPS 2026 style file, by its authors) or the starting kit's three-line default
-acquisition rule reproduced in paiec/protocol.py (random_query).
-
-The LLM ratings and guesses in results/llm_rating, results/subject_check and
-results/subject_prior, and the other data products derived from measurement-db
-(run results, Rasch difficulties, fitted parameters), are released under
-CC BY-SA 4.0, the license of the measurement-db curation they are derived from.

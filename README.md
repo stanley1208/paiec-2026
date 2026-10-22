@@ -95,4 +95,4 @@ file, by its authors) and the starting kit's three-line default acquisition rule
 ratings and guesses and the other data products derived from measurement-db (run results, Rasch
 difficulties, fitted parameters): CC BY-SA 4.0, like the measurement-db curation
 (<https://huggingface.co/datasets/aims-foundations/measurement-db>). measurement-db itself and
-the starting kit are not redistributed here.
+the starting kit are not redistributed here. `NOTICE.md` repeats these exceptions.

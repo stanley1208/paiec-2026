@@ -651,3 +651,7 @@ the release on purpose.
   had the README's SHA-256, and the subject check gave 0.818 again. No real key, private feedback
   ID or personal data was found. Their documentation fixes were applied (commit de537af) and the
   copy was re-exported. Nothing has been pushed; the author pushes.
+- The author created github.com/stanley1208/paiec-2026 and pushed the public copy (commit
+  f7070ca). Claude compared it through the GitHub API with the local copy: the same commit and the
+  same 212 files. GitHub labelled the license "Other", because LICENSE carried the exceptions
+  after the MIT text, so Claude moved them to NOTICE.md and left LICENSE as plain MIT.
