@@ -22,9 +22,18 @@ Table~\ref{tab:rules} lists every test whose outcome I decided by a rule written
     Gate (\texttt{run\_gate.py}) & 2026-10-07, with results & keep it if its worst-case regret over real, shuffled and reversed ratings is no larger & kept: 0.011 against 0.027 \\
     Does the LLM know subject strength? (\texttt{check.py}) & 2026-10-16 & mean within-benchmark Pearson of logit guess and ability at least 0.70 & go: 0.818 \\
     Guessed priors \newline (\texttt{run\_subject\_prior.py}) & 2026-10-17 & trust by worst-case regret; then gain of at least 0.003 and 2 SE at $K = 0$, better at $K = 1, 2$ and on 3 of 4 benchmarks & go: $t_g = 0.75$, $-0.0135$ (0.0013) \\
-    V4 or V5 as final (\texttt{check\_version5.py}) & 2026-10-20 & guesses on half the pairs and mean budget-0 Brier below 0.25 & V5: guesses on 8 of 8 pairs, budget-0 Brier 0.180 \\
+    V4 or V5 as final (\texttt{check\_version5.py}) & 2026-10-20 & guesses on at least half the pairs and mean budget-0 Brier below 0.25 & V5: guesses on 8 of 8 pairs, budget-0 Brier 0.180 \\
     \bottomrule
   \end{tabular}
 \end{table}
 
-The 200-item rating test reports correlations on its own sample; on all 1,049 rated items they were 0.82, 0.28, 0.44 and 0.77 (Section~\ref{sec:method}). Its rule's go branch was to test a deployable open model; once the starting kit showed that submissions may call an API during scoring, I used Claude itself instead, a change not fixed in advance. Two earlier choices of the final entry had rules too. I declared V3 final on 6 October, before the rating tests; once V4 passed them, I replaced that with the rule that V4 would be final if the billing page showed its ratings had been requested during scoring, which it did (\$9.49). That replacement itself was not fixed in advance, and the log does not record why I made it [TO CONFIRM: the reason, if remembered]. The V4-or-V5 rule above then superseded it. Two short trial runs of the rating test, with an unreliable reply parser, were discarded before the recorded run.
+The 200-item rating test reports correlations on its own sample; on all 1,049 rated items they were 0.82, 0.28, 0.44 and 0.77 (Section~\ref{sec:method}). Its rule's go branch was to test a deployable open model; once the starting kit showed that submissions may call an API during scoring, I used Claude itself instead, a change not fixed in advance. Two earlier choices of the final entry had rules too. Before uploading V3 I decided that it would be final if it ran, whatever its score. Once V4 passed the rating tests, I replaced that rule (a change not fixed in advance) with one making V4 final if the billing page showed its ratings had been requested during scoring, which it did (\$9.49). The V4-or-V5 rule above then superseded it. Two short trial runs of the rating test, with an unreliable reply parser, were discarded before the recorded run.
+
+\paragraph{Scenarios of the trust tests.}
+In the rating-trust test, half-noisy ratings keep each item's rating with probability 1/2 and otherwise take the rating of a random other item of the benchmark. Section~\ref{sec:results} reports the regrets of both trust tests.
+
+\paragraph{Choices without a rule.}
+The baselines, V1's prior scale of 0.5 and a stress test of V1 not reported here (held-out benchmarks made 1 or 2 logits easier or harder) had no rule fixed in advance. Neither had V3's switch to a scale of 0, which I made from formative feedback although it was worse offline ($+0.00300$ Brier ALC, SE 0.00047, in the default setting and $+0.00459$, SE 0.00055, in the hidden-sized setting with $K=1$).
+
+\paragraph{The first run of the V5 test.}
+This run stored the guess trust in the attribute that held V4's rating trust. Claude Code, the coding assistant I used (Section~\ref{sec:repro}), found the bug by tracing one pair after guess trust 0.25 had scored worse than both 0 and 0.5 at budget 31. It was fixed without changing the rule, and I report only the rerun. The invalid run, which tested a different model, had also chosen a guess trust of 0.75 and passed; it is not in the repository.

@@ -191,7 +191,11 @@ the release on purpose.
 - Added two optional settings to `paiec/item_pooling_core.py`, both off by default (the
   uploaded version 2 folder is kept as submitted, and a test checks that the current code
   still predicts exactly like it): an "agent rule" (no metadata nudge for subjects with a
-  harness, after the organizers' finding that the harness matters more than the model) and
+  harness, after Hardy et al. 2026, arXiv 2610.00651, with organizer Sanmi Koyejo, who found that
+  model-scaffold systems are ranked more reliably than the underlying models, and Claude's check
+  that on Multi-SWE-bench the harness explains more of the variance in subject success than the
+  model name, R^2 0.76 against 0.21; corrected 2026-10-28, this line first called the harness
+  effect an organizers' finding) and
   "question groups" (a subject-specific effect per group of items sharing their first
   feature, such as a competition, website or paper, after the testlet model in
   torch_measure). `scripts/run_ideas.py` compares each with version 2 on the same pairs,
@@ -406,7 +410,8 @@ the release on purpose.
 - 2026-10-08: the author asked the organizers whether the Anthropic API may be
   used during scoring; the answer was that Anthropic and OpenAI APIs are allowed. So version 4's
   use of the Anthropic API is within the rules ("network access during scoring is limited to
-  approved inference APIs").
+  approved inference APIs", the wording at the time; the rules page later named eight providers,
+  Anthropic among them).
 - Checks on the final `dist/version4.zip` (sha256 55d46699..., the zip in Codabench 968769
   plus the key), run after the key-format fix: kit checker and smoke test on Windows; kit
   checker, both smoke tests and a Linux rebuild with the same hash under WSL; the offline
@@ -479,7 +484,7 @@ the release on purpose.
   "adds one change", a table caption about scores the table did not show, and REAL's
   correlation, which rounds to 0.44, not 0.45 (also corrected in `results/llm_rating/README.md`;
   the entry above that gives 0.45 is wrong). Claude revised the draft with the organizers'
-  sigma(phi - z) notation, the probit approximation (largest error 0.0101 for tau = 2), a
+  Rasch form sigma(theta - z) (written sigma(phi - z) with phi = kappa0 * theta), the probit approximation (largest error 0.0101 for tau = 2), a
   worked example (0.417 under V4 against 0.647 under V3) and a model-details appendix; both
   numbers are printed by `scripts/report_tables.py`.
 
@@ -628,12 +633,16 @@ the release on purpose.
   missing guess had their fallbacks swapped. Claude revised the draft, added the rating-trust
   regrets, coverage and partner results and the pooling split assumption, renamed symbols that
   had two meanings, moved the broader-impact paragraph and the commands to new appendices, read
-  Anthropic's Commercial Terms of Service (21 October 2026) for the data card, and trimmed the main
-  text to about 8.5 pages (commit 84e7614).
+  Anthropic's Commercial Terms of Service (effective 17 June 2025) for the data card, and
+  trimmed the main text to about 8.5 pages (commit 84e7614).
 - Review round 2: two Claude agents rechecked the revision. They found that it had fixed the
-  first-round problems but introduced two errors of its own ("232 subjects" for 232 guesses; the
-  rules name no API providers), and that some passages were repeated or out of order. Claude fixed
-  these in the next commit.
+  first-round problems but introduced an error of its own ("232 subjects" for 232 guesses) and
+  kept the first draft's statement that the rules list the allowed API providers (the revision
+  added that the list includes Anthropic), which they said the rules do not do. They also found
+  that some passages were repeated or out of order. Claude fixed these in the next commit. The
+  citation check of 2026-10-28 found that the rules page now names eight providers, Anthropic
+  among them (the last archived copy, from 2026-10-07, named none; when the page changed is not
+  recorded), so that sentence of the report was rewritten.
 
 ## 2026-10-22: public code release prepared
 
@@ -655,3 +664,89 @@ the release on purpose.
   f7070ca). Claude compared it through the GitHub API with the local copy: the same commit and the
   same 212 files. GitHub labelled the license "Other", because LICENSE carried the exceptions
   after the MIT text, so Claude moved them to NOTICE.md and left LICENSE as plain MIT.
+
+## 2026-10-28: report placeholders and the 8-page trim
+
+- The rules page (re-read 2026-10-23) now asks for about 4 to 8 pages of main text; ours ran
+  into page 9. The final automatic score is a new run of the selected submission on a common
+  hidden test subset, not the formative score.
+- The author answered the funding question (paid the API costs personally; no funding or
+  competing interests) and sent Console screenshots: the paiec workspace has a \$50 monthly
+  limit, and the V5 run was billed \$10.64, \$0.06 of it for the Opus 4.8 fallback. Claude filled
+  those placeholders (commit f7c6790). With the author's agreement it dropped the request for
+  the reason behind the 8 October rule change; the report keeps that the change was not fixed in
+  advance.
+- A Claude workflow moved detail from the main text into the appendices and tightened wording,
+  so that the Conclusion now ends on page 8. Three Claude reviewers then checked the change for
+  lost or altered facts, style and the rules. Their 20 issues were fixed. Claude then checked
+  the main-text diff itself: no numbers or tables changed, all references resolve, and only the
+  placeholder on what the author read and changed is left.
+- Citation check, at the author's request: a Claude workflow (68 agents) looked up all 50
+  entries of references.bib on the web (Crossref, arXiv, publisher pages), checked that each of
+  the report's citations supports its sentence, and compared the report's statements about the
+  rules with the live rules page and the rest of the public repository. Each problem it raised was
+  rechecked by two more agents. All 50 sources exist and every citation points to the right work.
+  Fixed: the competition page's author list (it now lists 11 organizers); the introduction's
+  descriptions of ReEval
+  (which also predicts a new item's difficulty from its content) and of the two LLM difficulty
+  studies; the Rasch citation, which now covers only the Rasch form; the outdated statement that
+  the rules do not name the allowed API providers; "hidden logs" (only the program's own output is
+  hidden); "8 or 9 pairs", which describes my draws, not a rule; the benchmark licenses, now
+  listed in the data card; the checklist's source comment; the README's OpenReview line, which now
+  says the PDF is submitted through OpenReview; and five passages of this log (the agent rule, the
+  quoted API rule, the Rasch form, the date of the Commercial Terms and review round 2).
+- Second check, at the author's request, of whether those fixes were themselves right: a Claude
+  workflow (52 agents) re-verified every fix of commit 33ad210 against primary sources and the
+  report against the rules page, again with two more agents per raised problem. One fix was
+  wrong: commit 33ad210 had cut REAL's author list to the 12 names of the NeurIPS metadata, but
+  the proceedings paper itself names the 18-author arXiv list as the correct one, so that list
+  is back, with a note. The other fixes were confirmed. The check also led to: "draws I saw"
+  instead of "my uploads" (two uploads were never scored); the test rules described as
+  "written before its run"; three, not two, analyses whose scripts were not kept (the later
+  shifted-and-shuffled and reversed guesses were computed by a review agent without a kept
+  script); "none used its GPU" restored; the discarded rating trial runs mentioned with the
+  costs; the MathArena NonCommercial license noted with the released outputs (data card and
+  NOTICE.md); the style file's version and license status and the embedding models' creators in
+  the data card; the setup steps in the reproduction appendix; the subject-check run date in UTC+8;
+  ReEval's difficulty predictor described as fit to responses on other items; and the Hardy et al.
+  source restored in the agent-rule line above.
+
+## 2026-10-29: abstract opening and a style reread
+
+- The author asked whether the abstract's first sentence, which named the competition, reads like
+  a paper. Claude offered openings; the author chose one that starts with the problem ("Predicting
+  whether an AI system will solve a task, without running it, could make evaluation cheaper").
+  Claude rewrote the opening and shortened sentences in the introduction and Section 5 to keep the
+  main text at 8 pages (commit 03658bf).
+- At the author's request, Claude ran `docs/report/ai_tell_check.py` on every section and reread
+  the whole report for passages that sound machine-written. The checker found no AI-associated
+  vocabulary, filler phrases or trailing participle clauses; its three hits ("matters",
+  "cluster-robust", and "intricate" inside the verbatim rating prompt) are literal. Claude reworded
+  four sentences without changing any fact: the intro's description of formative feedback and its
+  second contribution, the hidden-sized setting in Section 2, and the long list of verbs in the
+  AI-use paragraph of Section 8, now three sentences. The main text still ends on page 8.
+
+## 2026-10-30: final audit of the report
+
+- The author read the whole report, found nothing to change, and asked for one last check for
+  invented numbers or topics and for text that reads as machine-written. Claude first reran
+  `scripts/report_tables.py` and `scripts/report_results.py`: all three tables came out byte
+  for byte as committed (the figure differed only in its embedded timestamp).
+- A Claude workflow (50 agents) traced about 860 numbers and claims, part by part, to the saved
+  runs, the code, this log and git, with two more agents re-examining each flag; three more agents
+  read the text for machine-written or off-topic passages. Nothing was invented or off-topic. One
+  SE was rounded the wrong way (V4 against V3 with two partner pairs: 0.000846, now 0.0008), and
+  the fixes were: three pointers (the ReEval name, now `\citet`; the offline table's pointer for
+  V3, now Appendix C; the data card's "negative test"); claims a little broader than the records
+  (the embedding range is a mean over the four benchmarks; "every item had a rating" only in the
+  main offline tests; the request headers are the API headers; the trial runs' cost was not
+  recorded; check_version5.py needs the private feedback; the strength sweep ran on the first
+  baseline version; provider counts per fit; hidden-sized early stops; four checklist answers);
+  a typesetting bug (`--run` printed as an en dash); and about 25 awkward sentences. All three
+  readers judged the text human-written.
+- Claude filled the last placeholder with the author's answer ("I read the whole report and
+  found nothing to change."). Two more fact reviewers and a copy editor then checked the edits;
+  they confirmed every changed number (recomputing the SE) and found two small precision points
+  and ten wordings to smooth, all applied. Build clean, fonts embedded, main text on 8 pages.
+- Claude offered three wordings for that sentence; the author chose "I read the full text and
+  take responsibility for it."

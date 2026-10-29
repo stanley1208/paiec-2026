@@ -10,7 +10,7 @@ subject's success rate.
 
 - Final entry: version 5, Codabench submission **1005477** (`submissions/version5`).
 - Repository: <https://github.com/stanley1208/paiec-2026>.
-- Technical report: `docs/report/` (LaTeX sources); the PDF is on OpenReview
+- Technical report: `docs/report/` (LaTeX sources); the PDF is submitted through OpenReview
   (NeurIPS.cc/2026/Workshop/PAIEC).
 
 ## Layout
@@ -62,9 +62,9 @@ subject's success rate.
 
 The commands use POSIX shell quoting (bash, zsh, Git Bash); in Windows PowerShell write
 `--options '{\"scale\": 0.5}'`. None of them needs an API key: the LLM ratings and guesses are
-saved in `results/`. Two analyses cannot be rerun because their scratch scripts were not kept: the
-text-embedding test and the scenario analysis behind V1's prior scale (both described in the
-report). The rating correlations on all 1,049 rated items were computed inline; they follow from
+saved in `results/`. Three analyses cannot be rerun because their scratch scripts were not kept: the
+text-embedding test, the scenario analysis behind V1's prior scale and the later V5 runs with
+shifted-and-shuffled or reversed guesses (all described in the report). The rating correlations on all 1,049 rated items were computed inline; they follow from
 the committed `sample_*_ids.json` and `ratings*.jsonl` files.
 
 The run folders record the commit of the development repository they ran from. This public

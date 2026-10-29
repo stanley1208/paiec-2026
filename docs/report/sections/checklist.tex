@@ -1,4 +1,4 @@
-% NeurIPS paper checklist -- questions from https://neurips.cc/public/guides/PaperChecklist (2026); answers drafted by Claude (2026-10-21).
+% NeurIPS paper checklist -- questions adapted from the NeurIPS paper checklist (https://neurips.cc/public/guides/PaperChecklist); answers drafted by Claude (2026-10-21).
 \section*{NeurIPS Paper Checklist}
 
 \begin{enumerate}
@@ -6,7 +6,7 @@
 \item {\bf Claims}
   \item[] Question: Do the main claims made in the abstract and introduction accurately reflect the paper's contributions and scope?
   \item[] Answer: \answerYes{}
-  \item[] Justification: The gains claimed are those of Section~\ref{sec:results}, each with its setting and standard error. The abstract and introduction say that the formative result is a single draw and that memorization may inflate the offline gains, and Section~\ref{sec:limitations} discusses both.
+  \item[] Justification: The offline gains claimed are those of Section~\ref{sec:results}, each with its setting and standard error. The abstract and introduction say that the formative result comes from a single draw and that memorization may inflate the offline gains, and Section~\ref{sec:limitations} discusses both.
 
 \item {\bf Limitations}
   \item[] Question: Does the paper discuss the limitations of the work performed by the authors?
@@ -31,12 +31,12 @@
 \item {\bf Experimental setting/details}
   \item[] Question: Does the paper specify all the training and test details (e.g., data splits, hyperparameters, how they were chosen, type of optimizer, etc.) necessary to understand the results?
   \item[] Answer: \answerYes{}
-  \item[] Justification: Section~\ref{sec:data} defines the splits and settings; Section~\ref{sec:method} and Appendix~\ref{app:model} give every hyperparameter and how it was set, Appendix~\ref{app:rules} the rules that chose the trust levels and the gate, and Section~\ref{sec:data} the choices made without a rule.
+  \item[] Justification: Section~\ref{sec:data} defines the splits and settings; Section~\ref{sec:method} and Appendix~\ref{app:model} give every hyperparameter and how the tuned or rule-chosen ones were set; the others, such as the gate's three-label minimum and the clipping bounds, were fixed by hand. Appendix~\ref{app:rules} gives the rules that set the trust levels and the gate, and the choices made without a rule.
 
 \item {\bf Experiment statistical significance}
   \item[] Question: Does the paper report error bars suitably and correctly defined or other appropriate information about the statistical significance of the experiments?
   \item[] Answer: \answerYes{}
-  \item[] Justification: Offline differences carry one cluster-robust standard error over subject--benchmark pairs and seeds 0--2 (Eq.~\eqref{eq:se}); formative results carry a standard error over pairs and are labeled single draws.
+  \item[] Justification: The main offline comparisons (Tables~\ref{tab:offline} and~\ref{tab:rules} and the gains in the abstract) carry one cluster-robust standard error over subject--benchmark pairs and seeds 0--2 (Eq.~\eqref{eq:se}); some secondary differences, such as per-benchmark gains and regrets, are given without one. Every formative result is labeled a single draw, and its score net of the floor carries a standard error over pairs.
 
 \item {\bf Experiments compute resources}
   \item[] Question: For each experiment, does the paper provide sufficient information on the computer resources (type of compute workers, memory, time of execution) needed to reproduce the experiments?
@@ -56,12 +56,12 @@
 \item {\bf Safeguards}
   \item[] Question: Does the paper describe safeguards that have been put in place for responsible release of data or models that have a high risk for misuse?
   \item[] Answer: \answerNA{}
-  \item[] Justification: The release consists of small statistical models and LLM ratings of public benchmark items, with no high risk of misuse.
+  \item[] Justification: The release consists of small statistical models and LLM ratings and guesses about public benchmarks and AI systems, with no high risk of misuse.
 
 \item {\bf Licenses for existing assets}
   \item[] Question: Are the creators or original owners of assets (e.g., code, data, models), used in the paper, properly credited and are the license and terms of use explicitly mentioned and properly respected?
   \item[] Answer: \answerYes{}
-  \item[] Justification: Appendix~\ref{app:datacard} gives each asset's version and license and the terms that cover the LLM outputs; the starting kit has no license, so it is not redistributed, and the repository says where to download it.
+  \item[] Justification: Appendix~\ref{app:datacard} gives the version and license of the data set and its benchmarks, the starting kit and the two embedding models, the version and license status of the NeurIPS style file, and the terms that cover the LLM outputs; the starting kit has no license, so it is not redistributed, and the repository says where to download it.
 
 \item {\bf New assets}
   \item[] Question: Are new assets introduced in the paper well documented and is the documentation provided alongside the assets?

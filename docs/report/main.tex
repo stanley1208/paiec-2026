@@ -31,7 +31,7 @@
 
 % Abstract -- drafted by Claude (2026-10-21).
 \begin{abstract}
-  The Predictive AI Evaluation Competition asks for the probability that an AI system, called a subject, solves an item of a hidden benchmark, given the subject's recorded fields, the item's text and the labels acquired so far for this subject and for other subjects scored with it. My entry chains small Bayesian models: a normal prior on the subject's ability, updated on its labels, and item difficulties pooled from other subjects' labels. Claude Opus 5.5 supplies two further priors, a rating of each item's difficulty and a guess of each subject's success rate, each calibrated on public data and trusted only as far as a worst-case analysis allows. Holding out one public benchmark at a time, on items that all have a rating, the ratings improved Brier ALC by 0.0144 (SE 0.0011) and the guesses by a further 0.0135 (SE 0.0013). On one hosted draw, the guesses lowered the Brier score before any label from 0.25 to 0.180. Claude may have seen results on the public benchmarks in training, so the gains could be smaller on new ones.
+  Predicting whether an AI system will solve a task, without running it, could make evaluation cheaper. The Predictive AI Evaluation Competition tests such predictors on hidden benchmarks: for an AI system (a subject) and an item, they give a probability of success from the subject's recorded fields, the item's text and the labels acquired so far for that subject and others in the same draw. My entry chains small Bayesian models: a normal prior on the subject's ability, updated on its labels, and item difficulties pooled from other subjects' labels. Claude Opus 5.5 supplies two further priors, a rating of each item's difficulty and a guess of each subject's success rate, each calibrated on public data and trusted only as far as a worst-case analysis allows. On rated items, with each public benchmark held out in turn, the ratings improved Brier ALC by 0.0144 (SE 0.0011) and the guesses by a further 0.0135 (SE 0.0013). On one hosted draw, the guesses lowered the Brier score before any label from 0.25 to 0.180. Claude may have seen results on the public benchmarks in training, so the gains could be smaller on new ones.
 \end{abstract}
 
 \input{sections/01_intro}
@@ -45,7 +45,7 @@
 \input{sections/09_conclusion}
 
 \begin{ack}
-I thank the organizers of the Predictive AI Evaluation Competition for the data, the starting kit and their answers on Discord. [TO CONFIRM: funding of the API costs and any competing interests.]
+I thank the organizers of the Predictive AI Evaluation Competition for the data, the starting kit and their answers on Discord. I paid the API costs myself; this work received no funding, and I have no competing interests.
 \end{ack}
 
 {\small

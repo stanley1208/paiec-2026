@@ -1,6 +1,6 @@
 # Option C pre-check: does Claude know how strong each AI system is?
 
-Run on 2026-10-15. The decision rule is in the docstring of `check.py` and was committed
+Run on 2026-10-16 (UTC+8). The decision rule is in the docstring of `check.py` and was committed
 (a5100b6) before the run. Commit hashes in this folder refer to the development repository,
 whose history is not public (see the top-level README).
 
